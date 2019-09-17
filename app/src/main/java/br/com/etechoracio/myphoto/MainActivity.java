@@ -53,6 +53,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onVisualizar(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setDataAndType(uri,"image/jpeg");
+        startActivity(intent);
 
 
     }
